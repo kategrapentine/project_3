@@ -171,11 +171,10 @@ console.log("What if it's cold?", willBuyDrink(false, 20));
 
 
 //Making my own function:
-//This function plays the game "Duck, Duck, Goose" with the elements of an array, 
+//This function plays the game "Duck, Duck, Goose" with the elements of an array: 
 
 function duckDuckGoose(array){
-    let getRandomInt = Math.floor(Math.random() * Math.floor(array.length));
-    let goose = getRandomInt;
+    let goose = Math.floor(Math.random() * Math.floor(array.length));
     console.log('Number of Ducks before Goose:',goose);
     for (let x = 0; x < array.length; x++) {
         if (array[x] == array[goose]) {
